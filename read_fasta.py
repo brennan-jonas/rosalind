@@ -27,4 +27,6 @@ filePath = 'test.fasta'  # edit this with your filepath
 lines = readFile(filePath)
 sequences = format_fasta(lines)
 
-print(sequences)
+for seqID, fasta in sequences.items():
+    print(f'SeqID: {seqID}')
+    print(f'FASTA Content: {fasta}')
